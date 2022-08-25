@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <header class="encabezado">
+        <img class="logo" src="Imagenes/Logo.png" alt="logo alura">
+        <h2>Encripta tu mensaje aquí!</h2>
+    </header>
+
+    <main class="contenedorPrincipal">
+
+        <section>
+            <textarea class="input-texto" cols="40" rows="6" placeholder="Ingrese el texto aqui"></textarea>
+            <div id="div-desaparece">
+                <img src="Imagenes/Vector.png" width="15" height="15">
+                <p class="informacion">Solo letras minúsculas y sin acentos.</p>
+            </div>
+            <div class="botones">
+                <button class="encriptar" onclick="btnEncriptar()">
+                    Encriptar
+                </button>
+                <button class="desencriptar" onclick="btnDesencriptar()">
+                    Desencriptar
+                </button>
+            </div>
+        </section>
+        <section class="mensaje-box">
+            <textarea class="mensaje" cols="20" rows="18"></textarea>
+            <button class="copiar" onclick="copiar()">Copiar</button>
+        </section>
+
+    </main>
+
+    <footer>
+        <a href="https://www.linkedin.com/in/dagopass070"><img src="Imagenes/logoLinkedin.jpg" width="20" height="20"
+                alt="logo linkedin"></a>
+        <a href="https://www.instagram.com/dagopass/"><img src="Imagenes/instaLogo.svg" width="20" height="20"
+                alt="logo instagram"></a>
+        <p>Creado by David solarte</p>
+        <p class="copyright">&copy Copyright by Alura LATAM & Oracle NEXT-ONE</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
